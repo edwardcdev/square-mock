@@ -36,7 +36,7 @@ const optimization = () => {
 const fileName = ext =>
   isDevelopment ? `[name].${ext}` : `[name].[hash].${ext}`
 
-const devTool = () => (isDevelopment ? 'source-map' : '')
+// const devTool = () => (isDevelopment ? 'source-map' : '')
 
 module.exports = {
   mode: 'production',
@@ -57,7 +57,8 @@ module.exports = {
       components: path.resolve(__dirname, 'src/components/')
     }
   },
-  devtool: devTool(),
+  // devtool: devTool(),
+  devtool: isProd ? false : 'source-map',
   watchOptions: {
     aggregateTimeout: 1000,
     poll: 1000

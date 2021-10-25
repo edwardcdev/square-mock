@@ -58,7 +58,7 @@ module.exports = {
     }
   },
   // devtool: devTool(),
-  devtool: isProd ? false : 'source-map',
+  devtool: isDevelopment ? false : 'source-map',
   watchOptions: {
     aggregateTimeout: 1000,
     poll: 1000

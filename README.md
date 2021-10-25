@@ -1,5 +1,5 @@
-# Square UI Dashboard Kit Mockup
-A simple mock-up of the Square [UI dashboard kit](https://designspace.io/product/square-dashboard-ui-kit/) using React, Redux, Webpack, Babel, and Firebase.
+# Square Dashboard UI Kit Mockup
+A simple mock-up of the [Square Dashboard UI Kit](https://designspace.io/product/square-dashboard-ui-kit/) using React, Redux, Webpack, Babel, and Firebase.
 It is only frontend, not including the backend part.
 
 ## Specification

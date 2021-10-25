@@ -14,7 +14,17 @@ const optimization = () => {
   }
   const production = {
     minimize: true,
-    minimizer: [new TerserWebpack({ cache: true })],
+    minimizer: [
+      // new TerserWebpack({ cache: true })
+      (compiler) => {
+        const TerserPlugin = require('terser-webpack-plugin');
+        new TerserPlugin({
+          terserOptions: {
+            compress: {},
+          }
+        }).apply(compiler);
+      }
+    ],
     splitChunks: {
       minSize: 10000,
       maxSize: 250000
@@ -74,9 +84,17 @@ module.exports = {
     ]
   },
   devServer: {
+    /*
     contentBase: path.join(__dirname, 'dist'),
     historyApiFallback: true,
     publicPath: '/'
+    */
+    static: {
+      directory: path.join(__dirname, 'dist'),
+      publicPath: '/serve-public-path-url',
+      publicPath: '/'
+    },
+    historyApiFallback: true,
   },
   plugins: [
     new Dotenv({

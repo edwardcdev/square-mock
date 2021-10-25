@@ -21,6 +21,14 @@
 
 > No create-react-app, classes react components, Bootstrap and jQuery.
 
+## Running
+
+```bash
+npm install
+npm run dev
+```
+It will run webpack server on http://localhost:8080/#/
+
 ## Testing
 
 Use login and password "admin" to log in.

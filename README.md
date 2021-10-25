@@ -1,5 +1,6 @@
 # Square Dashboard Mockup
-
+I worked for 4 years as a full-stack engineer in Square, Inc. I developed a simple mock-up of the Square dashboard using React, Redux, Webpack, Babel, and Firebase.
+It is only frontend, not including the backend part.
 
 ## Specification
 - [Webpack](https://webpack.js.org/)
